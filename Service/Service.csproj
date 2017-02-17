@@ -73,5 +73,9 @@
     <Folder Include="IService\ComManage\" />
     <Folder Include="ServiceImp\ComManage\" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\ComService.xml" />
+    <EmbeddedResource Include="Config\Service.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
