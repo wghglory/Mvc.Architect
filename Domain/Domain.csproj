@@ -72,17 +72,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
     <EntityDeploy Include="Sql_Wkdb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Sql_Wkdb.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
-    <None Include="packages.config" />
     <None Include="Sql_Wkdb.edmx.diagram">
       <DependentUpon>Sql_Wkdb.edmx</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Sql_Wkdb.Context.tt">
@@ -95,9 +96,6 @@
       <DependentUpon>Sql_Wkdb.edmx</DependentUpon>
       <LastGenOutput>Sql_Wkdb.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

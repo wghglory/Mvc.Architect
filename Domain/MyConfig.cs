@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data;
-using System.Linq;
-using System.Text;
 
 namespace Domain
 {
@@ -59,23 +55,23 @@ namespace Domain
         /// <summary>
         /// 构造数据库连接字符串 注：数据库切换要修改
         /// </summary>
-        public static string DataBaseConnectionString(string EntityName)
+        public static string DataBaseConnectionString(string entityName)
         {
             IDbConnection con = DefaultConnection;
-            return EFConnectionStringModle(EntityName, DefaultConnectionString);
+            return EFConnectionStringModle(entityName, DefaultConnectionString);
         }
         /// <summary>
         /// 构造EF使用数据库连接字符串
         /// </summary>
-        /// <param name="EntityName">数据上下文坏境</param>
-        /// <param name="DBsoure">数据字符串</param>
-        static string EFConnectionStringModle(string EntityName, string DBsoure)
+        /// <param name="entityName">数据上下文坏境</param>
+        /// <param name="dbSource">数据字符串</param>
+        static string EFConnectionStringModle(string entityName, string dbSource)
         {
             return string.Concat("metadata=res://*/",
-                EntityName, ".csdl|res://*/",
-                EntityName, ".ssdl|res://*/",
-                EntityName, ".msl;provider=System.Data.SqlClient;provider connection string='",
-                DBsoure, "'");
+                entityName, ".csdl|res://*/",
+                entityName, ".ssdl|res://*/",
+                entityName, ".msl;provider=System.Data.SqlClient;provider connection string='",
+                dbSource, "'");
 
         }
         #endregion
