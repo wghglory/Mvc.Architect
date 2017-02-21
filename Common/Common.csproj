@@ -54,6 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CacheHelper\ApplicationCache.cs" />
+    <Compile Include="CacheHelper\CacheHelper.cs" />
     <Compile Include="CryptHelper\AESCrypt.cs" />
     <Compile Include="CryptHelper\DESCrypt.cs" />
     <Compile Include="CryptHelper\DESEncrypt.cs" />
@@ -78,6 +80,8 @@
     <Compile Include="ToolsHelper\Captcha.cs" />
     <Compile Include="ToolsHelper\ZipHelper.cs" />
     <Compile Include="WebHelper\CookieHelper.cs" />
+    <Compile Include="WebHelper\JScript.cs" />
+    <Compile Include="WebHelper\QueryString.cs" />
     <Compile Include="WebHelper\SessionHelper.cs" />
   </ItemGroup>
   <ItemGroup>
