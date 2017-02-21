@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -74,6 +75,7 @@
     <Compile Include="ToolsHelper\RegexHelper.cs" />
     <Compile Include="ToolsHelper\Tools.cs" />
     <Compile Include="ToolsHelper\Utils.cs" />
+    <Compile Include="ToolsHelper\Captcha.cs" />
     <Compile Include="ToolsHelper\ZipHelper.cs" />
     <Compile Include="WebHelper\CookieHelper.cs" />
     <Compile Include="WebHelper\SessionHelper.cs" />

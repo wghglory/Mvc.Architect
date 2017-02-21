@@ -189,6 +189,11 @@
     <EmbeddedResource Include="Config\ComControllers.xml" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\login\login.css" />
+    <Content Include="Content\images\login\egg_shell.png" />
+    <Content Include="Content\images\login\login_top_tip.png" />
+    <Content Include="Content\images\login\puff.svg" />
+    <Content Include="Content\images\login\puffred.svg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
